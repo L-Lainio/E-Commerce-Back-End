@@ -1,0 +1,14 @@
+{
+  "name": "e-commerce-back-end",
+  "version": "1.0.0",
+  "description": "using sequelize in database E-com.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "sequelize"
+  ],
+  "author": "LLainio",
+  "license": "MIT"
+}
