@@ -1,6 +1,6 @@
 # E-Commerce Back End
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Contributor](https://img.shields.io/badge/Lora-Lainio-4baaaa.svg)](code_of_conduct.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![It's Me](https://img.shields.io/badge/Lora-Lainio-4baaaa.svg)]
 
 ## Table of Contents
 * Description
