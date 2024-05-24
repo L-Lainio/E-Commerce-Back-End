@@ -19,5 +19,14 @@
     "express": "^4.19.2",
     "mysql2": "^3.9.7",
     "sequelize": "^6.37.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/L-Lainio/eCommerceBackEnd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/L-Lainio/eCommerceBackEnd/issues"
+  },
+  "homepage": "https://github.com/L-Lainio/eCommerceBackEnd#readme"
 }
