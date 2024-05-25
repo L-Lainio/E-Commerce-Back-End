@@ -1,12 +1,11 @@
-// import important parts of sequelize library
-const { Model, DataTypes } = require("sequelize");
-// import our database connection from config.js
-const sequelize = require("../config/connection");
+// Import important parts of sequelize library
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection'); // Provide the correct file path to import Sequelize
 
 // Initialize Product model (table) by extending off Sequelize's Model class
-class Product extends Model {}
+class Product extends Model { }
 
-// set up fields and rules for Product model
+// Set up fields and rules for Product model
 Product.init(
 	{
 		id: {
@@ -43,11 +42,11 @@ Product.init(
 		},
 	},
 	{
-		sequelize,
-		timestamps: false,
-		freezeTableName: true,
-		underscored: true,
-		modelName: "product",
+		sequelize, // Make sure sequelize is passed correctly
+		modelName: 'Product', // Add a modelName if needed
+		tableName: 'products', // Specify the table name if different from the model name
+		timestamps: false, // Disable timestamps if not needed
+		// Add any other necessary options
 	}
 );
 
