@@ -1,30 +1,10 @@
-const Product = require("models/product.js");
-const Category = require("./category");
-const Tag = require("./tag	");
-const ProductTag = require("./productTag");
+const router = require('express').Router();
+const categoryRoutes = require('./categoryRoutes');
+const productRoutes = require('./productRoutes');
+const tagRoutes = require('./tagRoutes');
 
-// Products belongsTo Category
-Product.belongsTo(Category, {
-	foreignKey: "category_id",
-});
-// Categories have many Products
-Category.hasMany(Product, {
-	foreignKey: "category_id",
-});
-// Products belongToMany Tags (through ProductTag)
-Product.belongsToMany(Tag, {
-	through: ProductTag,
-	foreignKey: "product_id",
-});
-// Tags belongToMany Products (through ProductTag)
-Tag.belongsToMany(Product, {
-	through: ProductTag,
-	foreignKey: "tag_id",
-});
+router.use('/categories', categoryRoutes);
+router.use('/products', productRoutes);
+router.use('/tags', tagRoutes);
 
-module.exports = {
-	Product,
-	Category,
-	Tag,
-	ProductTag,
-};
+module.exports = router;
