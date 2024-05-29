@@ -1,26 +1,33 @@
-const Product = require("./product");
-const Category = require("./category");
-const Tag = require("./tag");
-const ProductTag = require("./productTag");
+// import models
+import { Sequelize, DataTypes } from 'sequelize';
+
+const Category = require('./Category');
+const Tag = require('./Tag');
+const ProductTag = require('./ProductTag');
+const sequelize = new Sequelize('sqlite::memory:');
+
 
 // Products belongsTo Category
-Product.belongsTo(Category, {
-  foreignKey: "category_id",
+product.belongsTo(Category, {
+  foreignKey: 'category_id'
 });
 // Categories have many Products
-Category.hasMany(Product, {
-  foreignKey: "product_id",
+Category.hasMany(product, {
+  foreignKey: 'category_id',
+  onDelete: 'CASCADE',
 });
 // Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, {
   through: ProductTag,
-  foreignKey: "productTag_id",
+  as: 'productTag_products',
+  foreignKey: 'product_id'
 });
 // Tags belongToMany Products (through ProductTag)
 Tag.belongsToMany(Product, {
   through: ProductTag,
-  foreignKey: "tag_id",
-});
+  as: 'productTag_products',
+  foreignKey: 'tag_id'
+})
 
 module.exports = {
   Product,
