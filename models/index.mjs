@@ -1,5 +1,5 @@
 // import models
-import { Sequelize, DataTypes } from 'sequelize';
+const { Sequelize, DataTypes } = require('sequelize');
 
 const Category = require('./Category');
 const Tag = require('./Tag');
