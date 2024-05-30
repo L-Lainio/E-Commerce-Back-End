@@ -1,4 +1,4 @@
-const { ProductTag } = require('../models/index.mjs');
+const { ProductTag } = require('../models/index.js');
 
 const productTagData = [
   {

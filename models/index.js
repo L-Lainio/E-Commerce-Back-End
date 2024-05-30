@@ -4,15 +4,16 @@ const { Sequelize, DataTypes } = require('sequelize');
 const Category = require('./Category');
 const Tag = require('./Tag');
 const ProductTag = require('./ProductTag');
-const sequelize = new Sequelize('sqlite::memory:');
+const Product = require('./Product');
+// const sequelize = new Sequelize { data };
 
 
 // Products belongsTo Category
-product.belongsTo(Category, {
+Product.belongsTo(Category, {
   foreignKey: 'category_id'
 });
 // Categories have many Products
-Category.hasMany(product, {
+Category.hasMany(Product, {
   foreignKey: 'category_id',
   onDelete: 'CASCADE',
 });

@@ -4,7 +4,7 @@ const Sequelize = require('sequelize');
 
 // module database.js
 
-const Sequelize = process.env.JAWSDB_URL
+const sequelize = process.env.JAWSDB_URL
   ? new Sequelize(process.env.JAWSDB_URL)
   : new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
     host: 'localhost',
@@ -13,4 +13,4 @@ const Sequelize = process.env.JAWSDB_URL
       decimalNumbers: true,
     },
   });
-module.exports = { sequelize };
+module.exports = sequelize;

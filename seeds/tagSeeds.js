@@ -1,4 +1,4 @@
-const { Tag } = require('../models/index.mjs');
+const { Tag } = require('../models/index.js');
 
 const tagData = [
   {

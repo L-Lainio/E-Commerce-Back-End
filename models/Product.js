@@ -1,6 +1,7 @@
 //  * Import important parts of sequelize library
 
 const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
 
 // Initialize Product model (table) by extending off Sequelize's Model class
 class Product extends Model { }
@@ -41,10 +42,12 @@ Product.init(
 		},
 	},
 	{
-		await sequelize.sync(); // Pass the Sequelize instance here
+		sequelize, // Pass the Sequelize instance here
 		timestamps: false,
 		freezeTableName: true,
 		underscored: true,
 		modelName: 'product',
 	}
 );
+
+module.exports = Product;
