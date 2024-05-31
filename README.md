@@ -1,6 +1,16 @@
-# E-Commerce Back End
+# L-Lainio eCommerceBackEnd
+# 13 Object-Relational Mapping (ORM): E-Commerce Back End
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![It's Me](https://img.shields.io/badge/Lora-Lainio-4baaaa.svg)]
+
+## Link to my walkthrough for this below link to video walkthrough
+![]<iframe src="https://share.zight.com/Wnu8rnlD" width="360" height="270" style="border:none" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowtransparency="true" allowfullscreen="true"></iframe>
+
+## My GIF
+![](./assets/images/Zight%20Recording%202024-5-23%20at%206.42.08%20PM.gif)
+
+## My Screenshot
+![](./assets/images/Zight%202024-5-23%20at%206.48.16%20PM.png)
 
 ## Table of Contents
 * Description
