@@ -1,16 +1,17 @@
 # L-Lainio eCommerceBackEnd
 # 13 Object-Relational Mapping (ORM): E-Commerce Back End
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![It's Me](https://img.shields.io/badge/Lora-Lainio-4baaaa.svg)]
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Contributor](https://img.shields.io/badge/Lora-Lainio-4baaaa.svg)](code_of_conduct.md)
 
-## Link to my walkthrough for this below link to video walkthrough
-![]<iframe src="https://share.zight.com/Wnu8rnlD" width="360" height="270" style="border:none" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowtransparency="true" allowfullscreen="true"></iframe>
-
-## My GIF
-![](./assets/images/Zight%20Recording%202024-5-23%20at%206.42.08%20PM.gif)
-
-## My Screenshot
-![](./assets/images/Zight%202024-5-23%20at%206.48.16%20PM.png)
+## Walkthrough Video
+- Create schema from MySQL shell
+- npm run seed
+- npm start
+- Then show Get routes
+- Video link :
+![](/assets/Zight%20Recording%202024-6-3%20at%209.11.13%20PM.mp4)
+![](/assets/Zight%202024-6-3%20at%209.19.52%20PM.png)
+![](/assets/Zight%202024-6-3%20at%209.19.31%20PM.png)
 
 ## Table of Contents
 * Description
@@ -58,13 +59,6 @@ The user can perform various CRUD operations on these tables via API calls:
 - PUT routes to update a product tag id and update a category or tag name
 - DELETE routes to delete a single category, single product, and single tag
 
-## Walkthrough Video
-- Create schema from MySQL shell
-- npm run seed
-- npm start
-- Then show Get routes
-- Video link :
-<!-- add video link here -->
 
 ## Questions
 
@@ -72,4 +66,4 @@ Have additional questions? Click the links below to reach me through my GitHub a
 
 [Link to Github](https://github.com/L-Lainio)
 
-<a href="mailto:arollainio@gmail.com">arollainio@gmail.com</a>
+<a href="http://gmail.com">arollainio@gmail.com</a>
